@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="home-bg" lang="en">
+<head>
+<link rel='icon' href='favicon.cc' type='image/x-icon'/ >
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<title>Archerd Aparejo</title>
+
+<link rel="stylesheet" href="style.css">  <!-- CSS link -->
+
+<script src="js.js"> 
+
+</script>
+
+<div class="ripple"></div>
+
+
+</head>
+
+
+<body style="background: black;"><!-- Begin HTML -->
+
+<div class="wrap">
+<button type="button" class="collapsible">&vArr;</button>
+<div class="content">
+  <a class="solid" href="">Rosemarie.tyg</a> <br>
+  <a class="solid" href="">Variety Pack</a> <br>
+  <a class="solid" href="">Thank You Grocery</a> <br>
+  <a class="solid" href="">Chelo Chelo Vol. 1: Hybrid Identity</a> <br>
+  <a class="solid" href="">Cool Design Doesn't Only Exist in Europe</a> <br>
+  <a class="solid" href="">LUNCHBOX/BAON</a> <br>
+  <a class="solid" href="">I’ve Learned This Magic, I’m Sorry</a> <br>
+  <a class="solid" href="">Zima Blue</a> <br>
+  <a class="solid" href="">Bok Choy Boy</a> <br>
+  <a class="solid" href="">Stencils 4 Spraypaint</a> <br>
+  <a class="solid" href="">POSTERS</a> <br>
+  <a class="solid" href="">Other Stuff</a> <br>
+</div>
+</div>
+
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.visibility === "visible") {
+      content.style.visibility = "hidden";
+    } else {
+      content.style.visibility = "visible";
+    }
+  });
+}
+
+</script>
+
+
+
+</body><!-- End HTML -->
+</html>

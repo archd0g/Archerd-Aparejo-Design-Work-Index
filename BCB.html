@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="home-bg" lang="en">
+<head>
+<link rel='icon' href='favicon.cc' type='image/x-icon'/ >
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<title>Archerd Aparejo</title>
+
+<link rel="stylesheet" href="style.css">  <!-- CSS link -->
+
+<style>
+    .collapsible {
+  background: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 40px;
+  z-index: 1000;
+}
+
+
+div.content {
+  padding: 10px;
+  visibility: hidden;
+  overflow: hidden;
+  color: #f1f1f1;
+  text-align: right;
+  font-family: Helvetica;
+  font-weight: 100;
+  background: black;
+  width: 100%;
+  float: right;
+  border: 1px solid #e8e8e8
+  
+}
+
+a.solid{
+  opacity: .8;
+
+}
+
+a.solid:hover{
+  opacity: 1;
+  color: white;
+}
+
+.wrap{
+    position: fixed;
+    z-index: 1;
+    width: 17%;
+    top: -.5%;
+    right: .5%;
+}
+
+@media (max-width: 600px) {
+a.solid{
+  opacity: .8;
+
+}
+
+.wrap{
+    width: 70%;
+}
+
+  }
+
+</style>
+
+<script src="js.js"> 
+
+</script>
+
+
+
+<div class="ripple"></div>
+
+
+</head>
+
+
+<body style="background: black;"><!-- Begin HTML -->
+
+
+<div class="wrap">
+<button type="button" class="collapsible">&vArr;</button>
+<div class="content" style="visibility:hidden;">
+  <a href="Home.html" style="white-space: nowrap; letter-spacing: .1rem"> <img class="icon" src="archicon.png"> ARCHERD A:</a> <br>
+  <a class="solid" href="RTYG.html">Rosemarie.tyg</a> <br>
+  <a class="solid" href="VP.html">Variety Pack</a> <br>
+  <a class="solid" href="TYG.html">Thank You Grocery</a> <br>
+  <a class="solid" href="CheloChelo.html">Chelo Chelo Vol. 1: Hybrid Identity</a> <br>
+  <a class="solid" href="CDEU.html">Cool Design Doesn't Only Exist in Europe</a> <br>
+  <a class="solid" href="LBBAON.html">LUNCHBOX/BAON</a> <br>
+  <a class="solid" href="ILTMIS.html">I’ve Learned This Magic, I’m Sorry</a> <br>
+  <a class="solid" href="ZB.html">Zima Blue</a> <br>
+  <a class="solid" href="BCB.html">Bok Choy Boy</a> <br>
+  <a class="solid" href="S4S.html">Stencils 4 Spraypaint</a> <br>
+  <a class="solid" href="POSTERS.html">POSTERS</a> <br>
+  <a class="solid" href="OS.html">Other Stuff</a> <br>
+</div>
+</div>
+
+
+
+
+<table class="home">
+
+<tr id="bcb">
+  <td  class="description"><b style="font-weight: 600">Bok Choy Boy</b><br/><i style="font-size: 70%;"> spraypaint + stencil + posters + shirts</i><br/>
+    <br/></td>
+</tr>
+
+  <tr class="worktable">
+<td class="worktable" ><div class="container">
+
+<div id="myWorkContent">
+
+<div id="insideDiv">
+
+<img class="LBBAON" src="images/BCB/BCBoy_SP.png" alt="Bok Choy Boy">
+<img class="LBBAON" src="images/BCB/LFJ_SP.png" alt="Bok Choy Boy">
+<img class="LBBAON" src="images/BCB/BCBRed.jpg" alt="Bok Choy Boy">
+<img class="LBBAON" src="images/BCB/BCBAqua.jpg" alt="Bok Choy Boy">
+<img class="LBBAON" src="images/BCB/BCBLavender.jpg" alt="Bok Choy Boy">
+
+
+
+
+</div>
+
+</div>
+
+  </div>
+
+</div></td>
+</tr>
+
+
+</table>
+
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.visibility === "hidden") {
+      content.style.visibility = "visible";
+    } else {
+      content.style.visibility = "hidden";
+    }
+  });
+}
+
+</script>
+
+
+
+</body><!-- End HTML -->
+</html>
